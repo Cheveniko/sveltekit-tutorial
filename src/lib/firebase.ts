@@ -3,9 +3,10 @@ import { getAuth, onAuthStateChanged, type User } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
 import { getStorage } from 'firebase/storage';
 import { writable } from 'svelte/store';
+import { FB_SECRET_KEY } from '$env/static/private';
 
 const firebaseConfig = {
-	apiKey: 'AIzaSyDrN2ndx5SJ6fBdXlWapQZsyXxJY_CfHY0',
+	apiKey: FB_SECRET_KEY,
 	authDomain: 'sveltekit-tutorial-f3be7.firebaseapp.com',
 	projectId: 'sveltekit-tutorial-f3be7',
 	storageBucket: 'sveltekit-tutorial-f3be7.appspot.com',
